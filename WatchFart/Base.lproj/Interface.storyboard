@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchFart" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Fart Remotely" id="Bru-hy-p7m">
+                            <connections>
+                                <action selector="fart" destination="AgC-eL-Hgc" id="umS-2g-hqU"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="center" title="Fart Locally" id="QCQ-fZ-lW3">
+                            <connections>
+                                <action selector="fartLocally" destination="AgC-eL-Hgc" id="H3P-Kr-q2e"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

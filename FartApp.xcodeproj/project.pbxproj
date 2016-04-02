@@ -12,7 +12,59 @@
 		A8CC0D001CB07B9B00FD1B8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0CFE1CB07B9B00FD1B8F /* Main.storyboard */; };
 		A8CC0D021CB07B9B00FD1B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D011CB07B9B00FD1B8F /* Assets.xcassets */; };
 		A8CC0D051CB07B9B00FD1B8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D031CB07B9B00FD1B8F /* LaunchScreen.storyboard */; };
+		A8CC0D121CB07BC900FD1B8F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D101CB07BC900FD1B8F /* Interface.storyboard */; };
+		A8CC0D141CB07BC900FD1B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D131CB07BC900FD1B8F /* Assets.xcassets */; };
+		A8CC0D1B1CB07BC900FD1B8F /* WatchFart Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A8CC0D1A1CB07BC900FD1B8F /* WatchFart Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A8CC0D201CB07BC900FD1B8F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CC0D1F1CB07BC900FD1B8F /* InterfaceController.swift */; };
+		A8CC0D221CB07BC900FD1B8F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CC0D211CB07BC900FD1B8F /* ExtensionDelegate.swift */; };
+		A8CC0D241CB07BC900FD1B8F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CC0D231CB07BC900FD1B8F /* ComplicationController.swift */; };
+		A8CC0D261CB07BC900FD1B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D251CB07BC900FD1B8F /* Assets.xcassets */; };
+		A8CC0D2A1CB07BC900FD1B8F /* WatchFart.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A8CC0D0E1CB07BC900FD1B8F /* WatchFart.app */; };
+		A8CC0D341CB07DF300FD1B8F /* fart.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D331CB07DF300FD1B8F /* fart.wav */; };
+		A8CC0D351CB0827A00FD1B8F /* fart.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D331CB07DF300FD1B8F /* fart.wav */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A8CC0D1C1CB07BC900FD1B8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8CC0CEF1CB07B9B00FD1B8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8CC0D191CB07BC900FD1B8F;
+			remoteInfo = "WatchFart Extension";
+		};
+		A8CC0D281CB07BC900FD1B8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8CC0CEF1CB07B9B00FD1B8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8CC0D0D1CB07BC900FD1B8F;
+			remoteInfo = WatchFart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A8CC0D2E1CB07BC900FD1B8F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A8CC0D1B1CB07BC900FD1B8F /* WatchFart Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CC0D321CB07BC900FD1B8F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A8CC0D2A1CB07BC900FD1B8F /* WatchFart.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A8CC0CF71CB07B9B00FD1B8F /* FartApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FartApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +74,28 @@
 		A8CC0D011CB07B9B00FD1B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8CC0D041CB07B9B00FD1B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8CC0D061CB07B9B00FD1B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8CC0D0E1CB07BC900FD1B8F /* WatchFart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchFart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8CC0D111CB07BC900FD1B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A8CC0D131CB07BC900FD1B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8CC0D151CB07BC900FD1B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8CC0D1A1CB07BC900FD1B8F /* WatchFart Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchFart Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8CC0D1F1CB07BC900FD1B8F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A8CC0D211CB07BC900FD1B8F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A8CC0D231CB07BC900FD1B8F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A8CC0D251CB07BC900FD1B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8CC0D271CB07BC900FD1B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8CC0D331CB07DF300FD1B8F /* fart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fart.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A8CC0CF41CB07B9B00FD1B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CC0D171CB07BC900FD1B8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				A8CC0CF91CB07B9B00FD1B8F /* FartApp */,
+				A8CC0D0F1CB07BC900FD1B8F /* WatchFart */,
+				A8CC0D1E1CB07BC900FD1B8F /* WatchFart Extension */,
 				A8CC0CF81CB07B9B00FD1B8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				A8CC0CF71CB07B9B00FD1B8F /* FartApp.app */,
+				A8CC0D0E1CB07BC900FD1B8F /* WatchFart.app */,
+				A8CC0D1A1CB07BC900FD1B8F /* WatchFart Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +128,7 @@
 		A8CC0CF91CB07B9B00FD1B8F /* FartApp */ = {
 			isa = PBXGroup;
 			children = (
+				A8CC0D331CB07DF300FD1B8F /* fart.wav */,
 				A8CC0CFA1CB07B9B00FD1B8F /* AppDelegate.swift */,
 				A8CC0CFC1CB07B9B00FD1B8F /* ViewController.swift */,
 				A8CC0CFE1CB07B9B00FD1B8F /* Main.storyboard */,
@@ -62,6 +137,28 @@
 				A8CC0D061CB07B9B00FD1B8F /* Info.plist */,
 			);
 			path = FartApp;
+			sourceTree = "<group>";
+		};
+		A8CC0D0F1CB07BC900FD1B8F /* WatchFart */ = {
+			isa = PBXGroup;
+			children = (
+				A8CC0D101CB07BC900FD1B8F /* Interface.storyboard */,
+				A8CC0D131CB07BC900FD1B8F /* Assets.xcassets */,
+				A8CC0D151CB07BC900FD1B8F /* Info.plist */,
+			);
+			path = WatchFart;
+			sourceTree = "<group>";
+		};
+		A8CC0D1E1CB07BC900FD1B8F /* WatchFart Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A8CC0D1F1CB07BC900FD1B8F /* InterfaceController.swift */,
+				A8CC0D211CB07BC900FD1B8F /* ExtensionDelegate.swift */,
+				A8CC0D231CB07BC900FD1B8F /* ComplicationController.swift */,
+				A8CC0D251CB07BC900FD1B8F /* Assets.xcassets */,
+				A8CC0D271CB07BC900FD1B8F /* Info.plist */,
+			);
+			path = "WatchFart Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +171,51 @@
 				A8CC0CF31CB07B9B00FD1B8F /* Sources */,
 				A8CC0CF41CB07B9B00FD1B8F /* Frameworks */,
 				A8CC0CF51CB07B9B00FD1B8F /* Resources */,
+				A8CC0D321CB07BC900FD1B8F /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A8CC0D291CB07BC900FD1B8F /* PBXTargetDependency */,
 			);
 			name = FartApp;
 			productName = FartApp;
 			productReference = A8CC0CF71CB07B9B00FD1B8F /* FartApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A8CC0D0D1CB07BC900FD1B8F /* WatchFart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8CC0D2F1CB07BC900FD1B8F /* Build configuration list for PBXNativeTarget "WatchFart" */;
+			buildPhases = (
+				A8CC0D0C1CB07BC900FD1B8F /* Resources */,
+				A8CC0D2E1CB07BC900FD1B8F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8CC0D1D1CB07BC900FD1B8F /* PBXTargetDependency */,
+			);
+			name = WatchFart;
+			productName = WatchFart;
+			productReference = A8CC0D0E1CB07BC900FD1B8F /* WatchFart.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A8CC0D191CB07BC900FD1B8F /* WatchFart Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8CC0D2B1CB07BC900FD1B8F /* Build configuration list for PBXNativeTarget "WatchFart Extension" */;
+			buildPhases = (
+				A8CC0D161CB07BC900FD1B8F /* Sources */,
+				A8CC0D171CB07BC900FD1B8F /* Frameworks */,
+				A8CC0D181CB07BC900FD1B8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchFart Extension";
+			productName = "WatchFart Extension";
+			productReference = A8CC0D1A1CB07BC900FD1B8F /* WatchFart Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +228,12 @@
 				ORGANIZATIONNAME = bahus;
 				TargetAttributes = {
 					A8CC0CF61CB07B9B00FD1B8F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					A8CC0D0D1CB07BC900FD1B8F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					A8CC0D191CB07BC900FD1B8F = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -113,6 +252,8 @@
 			projectRoot = "";
 			targets = (
 				A8CC0CF61CB07B9B00FD1B8F /* FartApp */,
+				A8CC0D0D1CB07BC900FD1B8F /* WatchFart */,
+				A8CC0D191CB07BC900FD1B8F /* WatchFart Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -124,7 +265,26 @@
 			files = (
 				A8CC0D051CB07B9B00FD1B8F /* LaunchScreen.storyboard in Resources */,
 				A8CC0D021CB07B9B00FD1B8F /* Assets.xcassets in Resources */,
+				A8CC0D341CB07DF300FD1B8F /* fart.wav in Resources */,
 				A8CC0D001CB07B9B00FD1B8F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CC0D0C1CB07BC900FD1B8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8CC0D141CB07BC900FD1B8F /* Assets.xcassets in Resources */,
+				A8CC0D121CB07BC900FD1B8F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8CC0D181CB07BC900FD1B8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8CC0D351CB0827A00FD1B8F /* fart.wav in Resources */,
+				A8CC0D261CB07BC900FD1B8F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +300,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8CC0D161CB07BC900FD1B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8CC0D221CB07BC900FD1B8F /* ExtensionDelegate.swift in Sources */,
+				A8CC0D201CB07BC900FD1B8F /* InterfaceController.swift in Sources */,
+				A8CC0D241CB07BC900FD1B8F /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8CC0D1D1CB07BC900FD1B8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8CC0D191CB07BC900FD1B8F /* WatchFart Extension */;
+			targetProxy = A8CC0D1C1CB07BC900FD1B8F /* PBXContainerItemProxy */;
+		};
+		A8CC0D291CB07BC900FD1B8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8CC0D0D1CB07BC900FD1B8F /* WatchFart */;
+			targetProxy = A8CC0D281CB07BC900FD1B8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A8CC0CFE1CB07B9B00FD1B8F /* Main.storyboard */ = {
@@ -157,6 +340,14 @@
 				A8CC0D041CB07B9B00FD1B8F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A8CC0D101CB07BC900FD1B8F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8CC0D111CB07BC900FD1B8F /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -269,6 +460,68 @@
 			};
 			name = Release;
 		};
+		A8CC0D2C1CB07BC900FD1B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WatchFart Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bahus.FartApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		A8CC0D2D1CB07BC900FD1B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "WatchFart Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bahus.FartApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		A8CC0D301CB07BC900FD1B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchFart_Extension;
+				INFOPLIST_FILE = WatchFart/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bahus.FartApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		A8CC0D311CB07BC900FD1B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchFart_Extension;
+				INFOPLIST_FILE = WatchFart/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bahus.FartApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -286,6 +539,22 @@
 			buildConfigurations = (
 				A8CC0D0A1CB07B9B00FD1B8F /* Debug */,
 				A8CC0D0B1CB07B9B00FD1B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A8CC0D2B1CB07BC900FD1B8F /* Build configuration list for PBXNativeTarget "WatchFart Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8CC0D2C1CB07BC900FD1B8F /* Debug */,
+				A8CC0D2D1CB07BC900FD1B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A8CC0D2F1CB07BC900FD1B8F /* Build configuration list for PBXNativeTarget "WatchFart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8CC0D301CB07BC900FD1B8F /* Debug */,
+				A8CC0D311CB07BC900FD1B8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

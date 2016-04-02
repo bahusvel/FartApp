@@ -14,6 +14,34 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A8CC0D0D1CB07BC900FD1B8F"
+               BuildableName = "WatchFart.app"
+               BlueprintName = "WatchFart"
+               ReferencedContainer = "container:FartApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A8CC0D191CB07BC900FD1B8F"
+               BuildableName = "WatchFart Extension.appex"
+               BlueprintName = "WatchFart Extension"
+               ReferencedContainer = "container:FartApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "A8CC0CF61CB07B9B00FD1B8F"
                BuildableName = "FartApp.app"
                BlueprintName = "FartApp"
@@ -32,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A8CC0CF61CB07B9B00FD1B8F"
-            BuildableName = "FartApp.app"
-            BlueprintName = "FartApp"
+            BlueprintIdentifier = "A8CC0D0D1CB07BC900FD1B8F"
+            BuildableName = "WatchFart.app"
+            BlueprintName = "WatchFart"
             ReferencedContainer = "container:FartApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -51,16 +79,27 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/FartApp">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A8CC0CF61CB07B9B00FD1B8F"
-            BuildableName = "FartApp.app"
-            BlueprintName = "FartApp"
+            BlueprintIdentifier = "A8CC0D0D1CB07BC900FD1B8F"
+            BuildableName = "WatchFart.app"
+            BlueprintName = "WatchFart"
             ReferencedContainer = "container:FartApp.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A8CC0D0D1CB07BC900FD1B8F"
+            BuildableName = "WatchFart.app"
+            BlueprintName = "WatchFart"
+            ReferencedContainer = "container:FartApp.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +109,27 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.carousel"
+         RemotePath = "/FartApp">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A8CC0CF61CB07B9B00FD1B8F"
-            BuildableName = "FartApp.app"
-            BlueprintName = "FartApp"
+            BlueprintIdentifier = "A8CC0D0D1CB07BC900FD1B8F"
+            BuildableName = "WatchFart.app"
+            BlueprintName = "WatchFart"
             ReferencedContainer = "container:FartApp.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A8CC0D0D1CB07BC900FD1B8F"
+            BuildableName = "WatchFart.app"
+            BlueprintName = "WatchFart"
+            ReferencedContainer = "container:FartApp.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

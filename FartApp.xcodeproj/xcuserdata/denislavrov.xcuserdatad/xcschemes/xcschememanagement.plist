@@ -9,10 +9,25 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>WatchFart (Complication).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>WatchFart.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>A8CC0CF61CB07B9B00FD1B8F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8CC0D0D1CB07BC900FD1B8F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
