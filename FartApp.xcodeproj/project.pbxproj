@@ -20,8 +20,15 @@
 		A8CC0D241CB07BC900FD1B8F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CC0D231CB07BC900FD1B8F /* ComplicationController.swift */; };
 		A8CC0D261CB07BC900FD1B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D251CB07BC900FD1B8F /* Assets.xcassets */; };
 		A8CC0D2A1CB07BC900FD1B8F /* WatchFart.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A8CC0D0E1CB07BC900FD1B8F /* WatchFart.app */; };
-		A8CC0D341CB07DF300FD1B8F /* fart.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D331CB07DF300FD1B8F /* fart.wav */; };
-		A8CC0D351CB0827A00FD1B8F /* fart.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D331CB07DF300FD1B8F /* fart.wav */; };
+		A8CC0D3E1CB0915000FD1B8F /* 01.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D3A1CB08E9B00FD1B8F /* 01.wav */; };
+		A8CC0D3F1CB0915000FD1B8F /* 02.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D3B1CB08E9B00FD1B8F /* 02.mp3 */; };
+		A8CC0D471CB092EA00FD1B8F /* 03.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D401CB092EA00FD1B8F /* 03.wav */; };
+		A8CC0D481CB092EA00FD1B8F /* 04.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D411CB092EA00FD1B8F /* 04.wav */; };
+		A8CC0D491CB092EA00FD1B8F /* 05.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D421CB092EA00FD1B8F /* 05.wav */; };
+		A8CC0D4A1CB092EA00FD1B8F /* 06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D431CB092EA00FD1B8F /* 06.mp3 */; };
+		A8CC0D4B1CB092EA00FD1B8F /* 07.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D441CB092EA00FD1B8F /* 07.mp3 */; };
+		A8CC0D4C1CB092EA00FD1B8F /* 08.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D451CB092EA00FD1B8F /* 08.mp3 */; };
+		A8CC0D4D1CB092EA00FD1B8F /* 09.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A8CC0D461CB092EA00FD1B8F /* 09.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +91,15 @@
 		A8CC0D231CB07BC900FD1B8F /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		A8CC0D251CB07BC900FD1B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8CC0D271CB07BC900FD1B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8CC0D331CB07DF300FD1B8F /* fart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fart.wav; sourceTree = "<group>"; };
+		A8CC0D3A1CB08E9B00FD1B8F /* 01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 01.wav; sourceTree = "<group>"; };
+		A8CC0D3B1CB08E9B00FD1B8F /* 02.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 02.mp3; sourceTree = "<group>"; };
+		A8CC0D401CB092EA00FD1B8F /* 03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 03.wav; sourceTree = "<group>"; };
+		A8CC0D411CB092EA00FD1B8F /* 04.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 04.wav; sourceTree = "<group>"; };
+		A8CC0D421CB092EA00FD1B8F /* 05.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 05.wav; sourceTree = "<group>"; };
+		A8CC0D431CB092EA00FD1B8F /* 06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06.mp3; sourceTree = "<group>"; };
+		A8CC0D441CB092EA00FD1B8F /* 07.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 07.mp3; sourceTree = "<group>"; };
+		A8CC0D451CB092EA00FD1B8F /* 08.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 08.mp3; sourceTree = "<group>"; };
+		A8CC0D461CB092EA00FD1B8F /* 09.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 09.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +143,7 @@
 		A8CC0CF91CB07B9B00FD1B8F /* FartApp */ = {
 			isa = PBXGroup;
 			children = (
-				A8CC0D331CB07DF300FD1B8F /* fart.wav */,
+				A8CC0D391CB08E9B00FD1B8F /* sounds */,
 				A8CC0CFA1CB07B9B00FD1B8F /* AppDelegate.swift */,
 				A8CC0CFC1CB07B9B00FD1B8F /* ViewController.swift */,
 				A8CC0CFE1CB07B9B00FD1B8F /* Main.storyboard */,
@@ -159,6 +174,22 @@
 				A8CC0D271CB07BC900FD1B8F /* Info.plist */,
 			);
 			path = "WatchFart Extension";
+			sourceTree = "<group>";
+		};
+		A8CC0D391CB08E9B00FD1B8F /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A8CC0D401CB092EA00FD1B8F /* 03.wav */,
+				A8CC0D411CB092EA00FD1B8F /* 04.wav */,
+				A8CC0D421CB092EA00FD1B8F /* 05.wav */,
+				A8CC0D431CB092EA00FD1B8F /* 06.mp3 */,
+				A8CC0D441CB092EA00FD1B8F /* 07.mp3 */,
+				A8CC0D451CB092EA00FD1B8F /* 08.mp3 */,
+				A8CC0D461CB092EA00FD1B8F /* 09.mp3 */,
+				A8CC0D3A1CB08E9B00FD1B8F /* 01.wav */,
+				A8CC0D3B1CB08E9B00FD1B8F /* 02.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +260,11 @@
 				TargetAttributes = {
 					A8CC0CF61CB07B9B00FD1B8F = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					A8CC0D0D1CB07BC900FD1B8F = {
 						CreatedOnToolsVersion = 7.3;
@@ -263,10 +299,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8CC0D3E1CB0915000FD1B8F /* 01.wav in Resources */,
+				A8CC0D4D1CB092EA00FD1B8F /* 09.mp3 in Resources */,
+				A8CC0D3F1CB0915000FD1B8F /* 02.mp3 in Resources */,
+				A8CC0D481CB092EA00FD1B8F /* 04.wav in Resources */,
 				A8CC0D051CB07B9B00FD1B8F /* LaunchScreen.storyboard in Resources */,
+				A8CC0D4A1CB092EA00FD1B8F /* 06.mp3 in Resources */,
+				A8CC0D4B1CB092EA00FD1B8F /* 07.mp3 in Resources */,
+				A8CC0D4C1CB092EA00FD1B8F /* 08.mp3 in Resources */,
 				A8CC0D021CB07B9B00FD1B8F /* Assets.xcassets in Resources */,
-				A8CC0D341CB07DF300FD1B8F /* fart.wav in Resources */,
 				A8CC0D001CB07B9B00FD1B8F /* Main.storyboard in Resources */,
+				A8CC0D471CB092EA00FD1B8F /* 03.wav in Resources */,
+				A8CC0D491CB092EA00FD1B8F /* 05.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +327,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8CC0D351CB0827A00FD1B8F /* fart.wav in Resources */,
 				A8CC0D261CB07BC900FD1B8F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
