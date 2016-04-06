@@ -9,14 +9,21 @@
 import WatchKit
 import Foundation
 import WatchConnectivity
+import CoreMotion
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate {
 	var session: WCSession? = nil
 	var audioFilePlayer: WKAudioFilePlayer!
+	var motionManager: CMMotionManager!
+	var motionQueue: NSOperationQueue!
+	static var motion = true
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         // Configure interface objects here.
+		
+		motionManager = CMMotionManager()
+		motionQueue = NSOperationQueue.mainQueue()
     }
 
     override func willActivate() {
@@ -28,10 +35,13 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
 			session!.activateSession()
 		}
 		
-		let assetURL = NSBundle.mainBundle().URLForResource("fart", withExtension: "wav")
-		let asset = WKAudioFileAsset(URL: assetURL!)
-		let playerItem = WKAudioFilePlayerItem(asset: asset)
-		audioFilePlayer = WKAudioFilePlayer(playerItem: playerItem)
+		motionManager.accelerometerUpdateInterval = 0.5
+		motionManager.startAccelerometerUpdatesToQueue(motionQueue){accelData, error in
+			let a = accelData?.acceleration
+			if a?.y < -0.5 {
+				self.fart()
+			}
+		}
     }
 
     override func didDeactivate() {
@@ -43,9 +53,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
 		session?.sendMessage(["fart":""], replyHandler: nil, errorHandler: nil)
 	}
 	
-	@IBAction func fartLocally() {
-		if audioFilePlayer.status == .ReadyToPlay {
-			audioFilePlayer.play()
-		}
+	@IBAction func motionSelector(value: Bool) {
+		InterfaceController.motion = value
 	}
 }

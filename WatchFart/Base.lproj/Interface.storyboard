@@ -10,19 +10,20 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchFart" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" verticalAlignment="center" title="Fart Remotely" id="Bru-hy-p7m">
+                        <button width="1" height="91.5" alignment="left" title="Fart Remotely" id="Bru-hy-p7m">
                             <connections>
                                 <action selector="fart" destination="AgC-eL-Hgc" id="umS-2g-hqU"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" verticalAlignment="center" title="Fart Locally" id="QCQ-fZ-lW3">
+                        <switch width="1" alignment="left" value="YES" title="Motion" id="Aed-He-QOy">
                             <connections>
-                                <action selector="fartLocally" destination="AgC-eL-Hgc" id="H3P-Kr-q2e"/>
+                                <action selector="motionSelector:" destination="AgC-eL-Hgc" id="lHf-u5-eK9"/>
                             </connections>
-                        </button>
+                        </switch>
                     </items>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="307" y="387"/>
         </scene>
     </scenes>
 </document>
