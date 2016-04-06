@@ -35,7 +35,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
 			session!.activateSession()
 		}
 		
-		motionManager.accelerometerUpdateInterval = 0.5
+		motionManager.accelerometerUpdateInterval = 1.0
 		motionManager.startAccelerometerUpdatesToQueue(motionQueue){accelData, error in
 			let a = accelData?.acceleration
 			if a?.y < -0.5 {
@@ -47,6 +47,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+		motionManager.stopAccelerometerUpdates()
     }
 
 	@IBAction func fart() {
